@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '8.0'
     s.ios.vendored_frameworks = 'FBSDKLytroKit.framework'
+    s.preserve_paths = "FBSDKLytroKit.framework"
+    s.vendored_frameworks = "FBSDKLytroKit.framework"
 
     s.ios.dependency 'Bolts'
     s.ios.dependency 'FBSDKCoreKit'
